@@ -1,13 +1,13 @@
 public class Returninpair {
-    class pair(){
+    class pair{
         long first,second;
-     public   pair(long first, long second){
+     public  pair(long first, long second){
          this.first=first;
          this.second=second;
-     }
-     public pair minmax(int [] arr,int n){
-          int max=arr[0];
-      int  min=arr[0];
+     }}
+     public pair minmax(long [] arr,long n){
+       long max=arr[0];
+      long  min=arr[0];
          for(int i=0;i<n;i++){
              if(arr[i]>max){
                 max=arr[i+1];
@@ -19,4 +19,4 @@ public class Returninpair {
          return  new pair(max,min);
      }
     }
-}
+
